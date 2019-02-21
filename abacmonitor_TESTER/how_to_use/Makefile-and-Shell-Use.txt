@@ -1,0 +1,34 @@
+Introduction:
+
+	Place the Makefile in the same folder as all of the code you are going to compile. rc.sh should be in the same directory.
+
+	In that directory there should be a folder named "input" that has all the test cases. There should also be a directory named "output" with two sub-directories, "actual" and "expected". "actual" will be where all the files from your output will be placed. "expected" will have all of the files that are expected as output.
+
+	This is operating under the assumption that you are executing on Linux and have all the required packages and permissions to execute.
+
+Running and using rc.sh:
+
+	Navigate to the directory that has "rc.sh", and in the command line type "chmod +x rc.sh". This will give you the ability to execute the file.
+
+	rc.sh will automaticaly tell you if there are differences between what the program output and what was expected. In addition it will also sort the new files into the correct directory.
+
+Example of how the base directory would look:
+
+abacmonitor		<-- File made by the Makefile. This is the fully built project
+input/			<-- Dir with all input test cases
+inputbuf.cc
+inputbuf.h
+inputbuf.o
+instructions/		<-- How to use the rc.sh and set up directories
+lexer.cc
+lexer.h
+lexer.o
+Makefile		<-- Make file for building the project. 
+			    If you make files of your own, please change this to include them
+output/			<-- Dir for all output, both the expected and actual
+parser.cc
+parser.h
+parser.o
+rc.sh			<-- Shell to execute the files
+
+
