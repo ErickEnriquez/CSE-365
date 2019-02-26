@@ -13,11 +13,11 @@ CLASSES = \
 all: $(CLASSES) classes
 	echo "java -cp '$(DIR)' $(MAIN)" '$$1' > abacmonitor
 	chmod 777 abacmonitor
-#$(CLASSES): unzip
+$(CLASSES): unzip
 unzip: $(ZIP)
 	unzip $(ZIP)
 classes: $(CLASSES:.java=.class)
 clean:
-	$(RM) *.class abacmonitor  
+	$(RM) *.class abacmonitor *.java
 
 
